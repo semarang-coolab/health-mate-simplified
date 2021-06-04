@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:drawable="@color/splash_background_color" />
+
+    <item
+        tools:bottom="100dp"
+        tools:left="50dp"
+        tools:right="50dp"
+        tools:top="100dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/il_splashscreen" />
+    </item>
+</layer-list>

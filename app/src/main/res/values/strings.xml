@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Health Math</string>
+    <string name="please_choose_one">Please Choose One</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="please_write_down">Please write down.</string>
+    <string name="write_here">Write Here …</string>
+    <string name="done">Done</string>
+    <string name="refresh">Refresh</string>
+    <string name="thank_you">Thank You.</string>
+    <string name="result">Result</string>
+    <string name="back_to_home">Back To Home</string>
+</resources>
