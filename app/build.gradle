@@ -16,7 +16,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "BASE_URL", '"https://health-mate-api-dummy-ybumkowzoq-et.a.run.app"')
+        buildConfigField("String", "BASE_URL", '"https://health-mate-api-ybumkowzoq-et.a.run.app"')
     }
 
     compileOptions {
