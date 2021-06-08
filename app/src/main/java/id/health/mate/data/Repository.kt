@@ -7,6 +7,7 @@ import id.health.mate.data.source.remote.response.model.post.BodyPost
 class Repository private constructor(private val remoteDataSource: RemoteDataSource) {
 
     companion object {
+        @Volatile
         private var instance: Repository? = null
 
         fun getInstance(): Repository {

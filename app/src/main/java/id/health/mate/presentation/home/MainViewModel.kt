@@ -20,7 +20,7 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 
     val dataChoice = HashSet<Data>()
 
-    val dataEssay = hashSetOf<Data>()
+    val dataEssay = HashSet<Data>()
 
     val answers = Array(4) { 0 }
 
@@ -39,7 +39,14 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
         dataChoice.forEachIndexed { index, data ->
             if (i == index) return data
         }
-        return Data(0, "", "", listOf())
+        return Data(0, "choice", "---", listOf())
+    }
+
+    fun getDataEssay(i: Int): Data {
+        dataEssay.forEachIndexed { index, data ->
+            if (i == index) return data
+        }
+        return Data(0, "essay", "---", listOf())
     }
 
     fun setData(data: Data) {
@@ -51,7 +58,7 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
     }
 
     fun setEssayAnswer(str: String?) {
-        essayAnswer.replace(0, essayAnswer.length, str ?: "")
+        essayAnswer.replace(0, essayAnswer.length, str ?: "---")
     }
 
     fun refreshData() {

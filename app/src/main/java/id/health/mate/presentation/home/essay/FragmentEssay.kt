@@ -24,7 +24,7 @@ class FragmentEssay : Fragment(R.layout.fragment_essay) {
 
     private val binding: FragmentEssayBinding by viewBinding()
 
-    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.getInstance() }
+    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.instance() }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -36,7 +36,7 @@ class FragmentEssay : Fragment(R.layout.fragment_essay) {
         @SuppressLint("SetTextI18n")
         binding.tvQuestionPage.text = "$currentPage / $pageSize"
 
-        val data = viewModel.getDataChoice(currentPage - 1)
+        val data = viewModel.getDataEssay(currentPage - 1)
 
         binding.tvQuestion.text = data.question
 

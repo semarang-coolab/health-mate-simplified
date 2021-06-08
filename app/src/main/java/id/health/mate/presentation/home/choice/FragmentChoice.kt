@@ -26,7 +26,7 @@ class FragmentChoice : Fragment(R.layout.fragment_choice) {
         const val EXTRA_DATA = "EXTRA_DATA"
     }
 
-    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.getInstance() }
+    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.instance() }
 
     private val binding: FragmentChoiceBinding by viewBinding()
 

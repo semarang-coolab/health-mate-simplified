@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
-    private val viewModel by viewModels<MainViewModel> { ViewModelFactory.getInstance() }
+    private val viewModel by viewModels<MainViewModel> { ViewModelFactory.instance() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

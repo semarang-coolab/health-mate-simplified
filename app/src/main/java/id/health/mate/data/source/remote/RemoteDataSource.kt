@@ -16,6 +16,7 @@ class RemoteDataSource(private val service: Service) {
     fun getTests() = flow {
         val result = try {
             Success(service.getTest())
+//            Success(Data.getResponseSuccess)
         } catch (err: Throwable) {
             val errResult = when (this) {
                 is retrofit2.HttpException -> errorConverter<ErrorResponse>()
@@ -29,6 +30,7 @@ class RemoteDataSource(private val service: Service) {
         val result = try {
             val res = service.postTest(bodyPost.get())
             Success(res.data)
+//            Success(Data.postSuccess.data)
         } catch (err: Throwable) {
             val resError = when (err) {
                 is retrofit2.HttpException -> errorConverter<ErrorResponse>()

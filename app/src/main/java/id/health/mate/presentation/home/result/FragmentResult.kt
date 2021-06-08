@@ -19,7 +19,7 @@ class FragmentResult : Fragment(R.layout.fragment_result) {
 
     private val binding: FragmentResultBinding by viewBinding()
 
-    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.getInstance() }
+    private val viewModel by activityViewModels<MainViewModel> { ViewModelFactory.instance() }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
