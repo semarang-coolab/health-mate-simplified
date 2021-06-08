@@ -11,6 +11,6 @@
         tools:top="100dp">
         <bitmap
             android:gravity="center"
-            android:src="@drawable/il_splashscreen" />
+            android:src="@drawable/illustration" />
     </item>
 </layer-list>
