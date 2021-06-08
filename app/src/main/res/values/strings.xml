@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Health Math</string>
+    <string name="app_name">Health Mate</string>
     <string name="please_choose_one">Please Choose One</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
